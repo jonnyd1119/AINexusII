@@ -13,12 +13,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold mb-4">AI Nexus</div>
-            <p className="mb-6 text-gray-400">
+            <div className="text-2xl font-bold mb-4 text-primary">AI Nexus</div>
+            <p className="mb-6 text-white/70">
               Empowering businesses through intelligent AI solutions that drive growth and efficiency.
             </p>
             <div className="flex space-x-4">
@@ -38,12 +38,12 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <a 
                   href="#about" 
-                  className="text-gray-400 hover:text-secondary transition-colors"
+                  className="text-white/70 hover:text-secondary transition-colors"
                   onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
                 >
                   About
@@ -52,7 +52,7 @@ export default function Footer() {
               <li>
                 <a 
                   href="#services" 
-                  className="text-gray-400 hover:text-secondary transition-colors"
+                  className="text-white/70 hover:text-secondary transition-colors"
                   onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}
                 >
                   Services
@@ -61,7 +61,7 @@ export default function Footer() {
               <li>
                 <a 
                   href="#how-it-works" 
-                  className="text-gray-400 hover:text-secondary transition-colors"
+                  className="text-white/70 hover:text-secondary transition-colors"
                   onClick={(e) => { e.preventDefault(); scrollToSection('how-it-works'); }}
                 >
                   How It Works
@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <a 
                   href="#faq" 
-                  className="text-gray-400 hover:text-secondary transition-colors"
+                  className="text-white/70 hover:text-secondary transition-colors"
                   onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}
                 >
                   FAQ
@@ -80,13 +80,13 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mt-1 mr-2 text-secondary" />
                 <a 
                   href="mailto:info@ainexus.agency" 
-                  className="text-gray-400 hover:text-secondary transition-colors"
+                  className="text-white/70 hover:text-secondary transition-colors"
                 >
                   info@ainexus.agency
                 </a>
@@ -95,7 +95,7 @@ export default function Footer() {
                 <Phone className="h-5 w-5 mt-1 mr-2 text-secondary" />
                 <a 
                   href="tel:+11234567890" 
-                  className="text-gray-400 hover:text-secondary transition-colors"
+                  className="text-white/70 hover:text-secondary transition-colors"
                 >
                   +1 (123) 456-7890
                 </a>
@@ -114,7 +114,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-white/50">
           <p>&copy; {new Date().getFullYear()} AI Nexus Agency. All rights reserved.</p>
         </div>
       </div>
