@@ -85,19 +85,10 @@ export default function Footer() {
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mt-1 mr-2 text-secondary" />
                 <a 
-                  href="mailto:info@ainexus.agency" 
+                  href="mailto:jond@ainexus.agency" 
                   className="text-white/70 hover:text-secondary transition-colors"
                 >
-                  info@ainexus.agency
-                </a>
-              </li>
-              <li className="flex items-start">
-                <Phone className="h-5 w-5 mt-1 mr-2 text-secondary" />
-                <a 
-                  href="tel:+11234567890" 
-                  className="text-white/70 hover:text-secondary transition-colors"
-                >
-                  +1 (123) 456-7890
+                  jond@ainexus.agency
                 </a>
               </li>
               <li>
