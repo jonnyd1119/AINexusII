@@ -37,30 +37,30 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="section bg-gray-50">
+    <section id="faq" className="section bg-accent">
       <div className="container mx-auto">
         <h2 className="section-title">Frequently Asked Questions</h2>
         <p className="section-subtitle">Get answers to common questions about our AI solutions.</p>
         
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
-            <div key={index} className="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+            <div key={index} className="mb-4 border border-border rounded-lg overflow-hidden">
               <button 
-                className="w-full flex justify-between items-center p-5 bg-white hover:bg-gray-50 transition-colors text-left"
+                className="w-full flex justify-between items-center p-5 bg-card hover:bg-card/80 transition-colors text-left"
                 onClick={() => toggleFaq(index)}
                 aria-expanded={expandedFaq === index}
                 aria-controls={`faq-answer-${index}`}
               >
-                <span className="font-semibold">{faq.question}</span>
+                <span className="font-semibold text-white">{faq.question}</span>
                 <ChevronDown 
-                  className={`transition-transform ${expandedFaq === index ? 'rotate-180' : ''}`} 
+                  className={`transition-transform text-white ${expandedFaq === index ? 'rotate-180' : ''}`} 
                 />
               </button>
               <div 
                 id={`faq-answer-${index}`}
-                className={`bg-white px-5 pb-5 transition-all duration-300 ${expandedFaq === index ? 'block' : 'hidden'}`}
+                className={`bg-card/80 px-5 pb-5 transition-all duration-300 ${expandedFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
               >
-                <p className="text-gray-700">
+                <p className="text-white/80">
                   {faq.answer}
                 </p>
               </div>

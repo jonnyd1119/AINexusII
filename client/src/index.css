@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 20 14.3% 4.1%;
-  --muted: 60 4.8% 95.9%;
-  --muted-foreground: 25 5.3% 44.7%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 20 14.3% 4.1%;
-  --card: 0 0% 100%;
-  --card-foreground: 20 14.3% 4.1%;
-  --border: 20 5.9% 90%;
-  --input: 20 5.9% 90%;
-  --primary: 254 82% 62%;  /* #5846f6 */
+  --background: 230 35% 7%;  /* Very dark blue background */
+  --foreground: 0 0% 100%;   /* White text */
+  --muted: 240 30% 15%;      /* Muted dark blue */
+  --muted-foreground: 240 10% 70%;
+  --popover: 230 35% 7%;
+  --popover-foreground: 0 0% 100%;
+  --card: 230 40% 10%;
+  --card-foreground: 0 0% 100%;
+  --border: 240 25% 20%;
+  --input: 240 25% 20%;
+  --primary: 254 82% 62%;    /* #5846f6 */
   --primary-foreground: 211 100% 99%;
-  --secondary: 162 94% 42%; /* #06d6a0 */
-  --secondary-foreground: 24 9.8% 10%;
-  --accent: 60 4.8% 95.9%;
-  --accent-foreground: 24 9.8% 10%;
+  --secondary: 162 94% 42%;  /* #06d6a0 */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 240 30% 15%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 84.2% 60.2%; /* #dc3545 */
   --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 20 14.3% 4.1%;
+  --ring: 240 25% 70%;
   --radius: 0.5rem;
 }
 
@@ -76,10 +76,15 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-4 text-center;
+    @apply text-3xl md:text-4xl font-bold mb-4 text-center text-white;
   }
   
   .section-subtitle {
-    @apply text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto;
+    @apply text-xl text-white/70 mb-12 text-center max-w-3xl mx-auto;
+  }
+
+  /* Card Style for dark theme */
+  .dark-card {
+    @apply bg-card text-card-foreground rounded-xl shadow-lg hover:shadow-primary/10 transition-all duration-300;
   }
 }

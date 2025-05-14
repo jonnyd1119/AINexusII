@@ -34,7 +34,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="section bg-gray-50">
+    <section id="how-it-works" className="section bg-background">
       <div className="container mx-auto">
         <h2 className="section-title">How It Works</h2>
         <p className="section-subtitle">Our streamlined process delivers results quickly and efficiently.</p>
@@ -44,14 +44,14 @@ export default function HowItWorks() {
             {steps.map((step) => (
               <div 
                 key={step.number} 
-                className="flex flex-col md:flex-row gap-8 items-center bg-white rounded-xl shadow-lg p-8"
+                className="flex flex-col md:flex-row gap-8 items-center dark-card p-8"
               >
                 <div className="flex-shrink-0 w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold">
                   {step.number}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-xl font-bold mb-2 text-white">{step.title}</h3>
+                  <p className="text-white/80">
                     {step.description}
                   </p>
                 </div>

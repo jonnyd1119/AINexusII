@@ -29,7 +29,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 bg-white z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
+    <header className={`fixed top-0 left-0 right-0 bg-background z-50 transition-all duration-300 ${isScrolled ? 'shadow-md shadow-primary/20' : ''}`}>
       <div className="container mx-auto px-4">
         <nav className="flex justify-between items-center py-4">
           <a href="#" className="text-2xl font-bold text-primary" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
@@ -38,28 +38,28 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-8">
             <a 
               href="#about" 
-              className="text-dark hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
               onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
             >
               About
             </a>
             <a 
               href="#services" 
-              className="text-dark hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
               onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}
             >
               Services
             </a>
             <a 
               href="#how-it-works" 
-              className="text-dark hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
               onClick={(e) => { e.preventDefault(); scrollToSection('how-it-works'); }}
             >
               How It Works
             </a>
             <a 
               href="#faq" 
-              className="text-dark hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
               onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}
             >
               FAQ
@@ -67,14 +67,14 @@ export default function Navbar() {
             <a 
               href="https://calendly.com/jon-ainexus/15-minute-meeting-ai-automation-solution-overview" 
               target="_blank" 
-              className="text-primary font-semibold hover:text-secondary transition-colors"
+              className="text-secondary font-semibold hover:text-primary transition-colors"
               rel="noopener noreferrer"
             >
               Work With Us
             </a>
           </div>
           <button 
-            className="md:hidden text-dark focus:outline-none"
+            className="md:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -84,32 +84,32 @@ export default function Navbar() {
       </div>
       
       {/* Mobile menu */}
-      <div className={`md:hidden bg-white shadow-inner transition-all duration-300 ${isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+      <div className={`md:hidden bg-background border-t border-border transition-all duration-300 ${isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
           <a 
             href="#about" 
-            className="text-dark hover:text-primary transition-colors py-2"
+            className="text-white hover:text-primary transition-colors py-2"
             onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
           >
             About
           </a>
           <a 
             href="#services" 
-            className="text-dark hover:text-primary transition-colors py-2"
+            className="text-white hover:text-primary transition-colors py-2"
             onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}
           >
             Services
           </a>
           <a 
             href="#how-it-works" 
-            className="text-dark hover:text-primary transition-colors py-2"
+            className="text-white hover:text-primary transition-colors py-2"
             onClick={(e) => { e.preventDefault(); scrollToSection('how-it-works'); }}
           >
             How It Works
           </a>
           <a 
             href="#faq" 
-            className="text-dark hover:text-primary transition-colors py-2"
+            className="text-white hover:text-primary transition-colors py-2"
             onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}
           >
             FAQ
@@ -117,7 +117,7 @@ export default function Navbar() {
           <a 
             href="https://calendly.com/jon-ainexus/15-minute-meeting-ai-automation-solution-overview"
             target="_blank" 
-            className="text-primary font-semibold hover:text-secondary transition-colors py-2"
+            className="text-secondary font-semibold hover:text-primary transition-colors py-2"
             rel="noopener noreferrer"
           >
             Work With Us

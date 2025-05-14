@@ -79,7 +79,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="section bg-gray-50">
+    <section id="services" className="section bg-accent">
       <div className="container mx-auto">
         <h2 className="section-title">Our Services</h2>
         <p className="section-subtitle">Comprehensive AI solutions to transform your business operations.</p>
@@ -88,16 +88,16 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl shadow-lg p-8 transition duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="dark-card p-8 transition duration-300 hover:shadow-primary/20 hover:-translate-y-1"
             >
               <div className="text-primary mb-4">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-              <p className="text-gray-700 mb-4">
+              <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
+              <p className="text-white/80 mb-4">
                 {service.description}
               </p>
-              <ul className="text-gray-600 space-y-2">
+              <ul className="text-white/70 space-y-2">
                 {service.features.map((feature, i) => (
                   <li key={i} className="flex items-start">
                     <span className="text-secondary mr-2">✓</span>
