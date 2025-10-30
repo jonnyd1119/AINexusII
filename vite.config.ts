@@ -4,7 +4,7 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
-  base: "/AINexusII/",  // Your repo name
+  base: '/AINexusII/', // IMPORTANT: matches your GitHub repo name
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -26,7 +26,8 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    // Make index.html go to dist root, so GitHub Pages can serve it
+    outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
 });
