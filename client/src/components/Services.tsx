@@ -48,12 +48,12 @@ export default function Services() {
     },
     {
       icon: <Cog className="h-10 w-10" />,
-      title: "Process Automation",
+      title: "Administration Task Automation",
       description: "Streamline operations and reduce costs by automating repetitive tasks with intelligent workflows.",
       features: [
         "Workflow Optimization",
         "Document Processing",
-        "Administrative Task Automation"
+        "Complex API integrations with CRM's"
       ]
     },
     {
