@@ -3,7 +3,8 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
-export default defineConfig({base: https://github.com/jonnyd1119/AINexusII,
+export default defineConfig({
+  base: "/AINexusII/",  // <-- Add this line ONLY for GitHub Pages
   plugins: [
     react(),
     runtimeErrorOverlay(),
